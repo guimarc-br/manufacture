@@ -45,6 +45,7 @@ class StockRule(models.Model):
             data["orderpoint_id"] = orderpoint.id
         procurement_group = values.get("group_id")
         if procurement_group:
+            print('oi')
             data["procurement_group_id"] = procurement_group.id
         return data
 
