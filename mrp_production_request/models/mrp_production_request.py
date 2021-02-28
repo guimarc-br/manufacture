@@ -110,6 +110,7 @@ class MrpProductionRequest(models.Model):
         domain=[("type", "in", ["product", "consu"])],
         track_visibility="onchange",
         readonly=True,
+        1
         states={"draft": [("readonly", False)]},
     )
     product_tmpl_id = fields.Many2one(
